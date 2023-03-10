@@ -15,7 +15,7 @@ class JiaguUtils {
         if (!parentDir.exists()) {
             throw new RuntimeException("加固文件不存在。${jiaGuExtension.jiaGuDir}")
         }
-        commandJiaGu = "java\\bin\\java -jar jiagu.jar "
+        commandJiaGu = "java/bin/java -jar jiagu.jar "
         // 1，登录
         String result = login(jiaGuExtension)
         if (!result.contains("success")) {
